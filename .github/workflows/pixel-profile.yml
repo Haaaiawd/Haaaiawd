@@ -25,8 +25,7 @@ jobs:
         uses: LuciNyan/pixel-profile/action@main
         with:
           outputs: |
-            dist/github-stats?username=Haaaiawd&screen_effect=false&theme=fuji&dithering=true&hide=avatar
-            dist/github-stats-dark?username=Haaaiawd&theme=fuji&hide=avatar&avatar_border=false&screen_effect=true
+            dist/github-stats?username=Haaaiawd&theme=crt
           crt_outputs: |
             dist/github-stats-crt?username=Haaaiawd&include_all_commits=true
 
