@@ -1,9 +1,9 @@
-Hi there! I'm Haaaiawd
+## Hi there! I'm Haaaiawd
 
 <picture decoding="async" loading="lazy">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
-  <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
+  <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif" width="100%">
 </picture>
 
 ---
