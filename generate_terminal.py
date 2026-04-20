@@ -36,21 +36,24 @@ def prompt_line(row: int, command: str) -> None:
 # --- whoami ------------------------------------------------------------
 prompt_line(1, "whoami")
 t.gen_text(text=f"\x1b[1;37m{USERNAME}\x1b[0m", row_num=2)
+t.clone_frame(10)  # brief pause so the name is readable
 
 # --- skills ------------------------------------------------------------
 prompt_line(4, "cat skills.txt")
 t.gen_text(text="\x1b[1;36m- Agent Development\x1b[0m", row_num=5)
 t.gen_text(text="\x1b[1;36m- AI Programming\x1b[0m", row_num=6)
 t.gen_text(text="\x1b[1;36m- Prompt Engineering\x1b[0m", row_num=7)
+t.clone_frame(15)  # hold skill list
 
 # --- motto -------------------------------------------------------------
 prompt_line(9, "cat motto.txt")
 t.gen_text(text="\x1b[1;33mLet AI Illuminate Humanity's\x1b[0m", row_num=10)
 t.gen_text(text="\x1b[1;33mRadiant Future of Goodness.\x1b[0m", row_num=11)
 
-# --- final blinking prompt --------------------------------------------
+# --- final blinking prompt + hold so the full screen is readable ------
 t.set_prompt(PROMPT)
-t.gen_prompt(row_num=13)
+t.gen_prompt(row_num=13, count=4)
+t.clone_frame(30)  # ~2s hold on the final frame before the GIF loops
 
 t.gen_gif()
 print("Terminal GIF generated: output.gif")
