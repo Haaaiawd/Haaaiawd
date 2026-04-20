@@ -1,10 +1,27 @@
 Hi there! I'm Haaaiawd
 
-<picture decoding="async" loading="lazy">
-  <source media="(prefers-color-scheme: light)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
-  <source media="(prefers-color-scheme: dark)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
-  <img alt="github stats" src="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
-</picture>
+<div align="center">
+  <picture decoding="async" loading="lazy">
+    <source media="(prefers-color-scheme: light)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
+    <source media="(prefers-color-scheme: dark)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
+    <img alt="github stats" src="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true" style="animation: flicker 3s infinite;">
+  </picture>
+</div>
+
+<style>
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: translateX(0); }
+  10% { opacity: 0.9; transform: translateX(-1px); }
+  20% { opacity: 0.95; transform: translateX(1px); }
+  30% { opacity: 0.85; transform: translateX(-1px); }
+  40% { opacity: 0.9; transform: translateX(1px); }
+  50% { opacity: 0.8; transform: translateX(0); }
+  60% { opacity: 0.9; transform: translateX(-1px); }
+  70% { opacity: 0.95; transform: translateX(1px); }
+  80% { opacity: 0.85; transform: translateX(-1px); }
+  90% { opacity: 0.9; transform: translateX(1px); }
+}
+</style>
 
 ---
 
