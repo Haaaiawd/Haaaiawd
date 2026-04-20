@@ -20,13 +20,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Install FFmpeg
         run: |
@@ -34,30 +33,47 @@ jobs:
           sudo apt-get install -y ffmpeg
 
       - name: Generate terminal GIF
-        run: |
-          python generate_terminal.py
+        run: python generate_terminal.py
 
-      - name: Download pixel-profile images
+      - name: Download pixel-profile frames
         run: |
           mkdir -p pixel-frames
-          # Download the same image multiple times for simple animation
-          for i in {1..3}; do
-            curl -o "pixel-frames/frame_$i.png" "https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true"
+          for i in 1 2 3; do
+            curl -fsSL \
+              -o "pixel-frames/frame_$i.png" \
+              "https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true"
           done
 
-      - name: Create pixel-profile GIF (16:9)
+      - name: Build pixel-profile GIF (16:9)
         run: |
-          ffmpeg -hide_banner -loglevel error -r 2 -i pixel-frames/frame_%d.png -vf "scale=640:360,eq=brightness=0.05:contrast=1.05" -loop 0 pixel-profile.gif
+          ffmpeg -y -hide_banner -loglevel error \
+            -framerate 2 -i pixel-frames/frame_%d.png \
+            -vf "scale=640:360:flags=lanczos,eq=brightness=0.05:contrast=1.05" \
+            -loop 0 pixel-profile-only.gif
 
-      - name: Merge pixel-profile and terminal GIFs (pixel-profile first)
+      - name: Merge pixel-profile and terminal GIFs
         run: |
-          ffmpeg -hide_banner -loglevel error -i pixel-profile.gif -i output.gif -filter_complex "[0:v][1:v]concat=n=2:v=1" -loop 0 pixel-profile.gif
+          ffmpeg -y -hide_banner -loglevel error \
+            -i pixel-profile-only.gif -i output.gif \
+            -filter_complex "\
+              [0:v]scale=640:360:flags=lanczos,fps=10[a];\
+              [1:v]scale=640:360:flags=lanczos,fps=10[b];\
+              [a][b]concat=n=2:v=1[v];\
+              [v]split[s0][s1];\
+              [s0]palettegen=max_colors=128[p];\
+              [s1][p]paletteuse=dither=bayer:bayer_scale=5" \
+            -loop 0 pixel-profile.gif
 
-      - name: Upload GIFs to output branch
+      - name: Stage output artifacts
+        run: |
+          mkdir -p publish
+          cp pixel-profile.gif output.gif publish/
+
+      - name: Publish GIFs to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./publish
           publish_branch: output
           destination_dir: .
-          force_orphan: true
+          keep_files: true
