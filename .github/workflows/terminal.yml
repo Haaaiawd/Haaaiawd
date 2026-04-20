@@ -45,10 +45,9 @@ jobs:
           python generate_terminal.py
 
       - name: Upload GIF to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: .
-          keep_history: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: output
+          force_orphan: true
