@@ -1,4 +1,4 @@
-Hi there! I'm Haaaiawd 👋
+Hi there! I'm Haaaiawd
 
 <picture decoding="async" loading="lazy">
   <source media="(prefers-color-scheme: light)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true">
