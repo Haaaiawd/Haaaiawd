@@ -15,11 +15,9 @@
   <table align="center" width="100%">
     <tr>
       <td width="50%">
-        <b>Connect with Me</b>
-        <p>
-          <a href="https://bonjour.bio/haa"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-bonjour.svg" alt="bonjour badge"></a><br>
-          <a href="https://xhslink.com/m/8BTBv4WZsmn"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-rednote.svg" alt="小红书 badge"></a>
-        </p>
+        <b>Connect with Me</b><br>
+        <a href="https://bonjour.bio/haa"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-bonjour.svg" alt="bonjour badge"></a><br>
+        <a href="https://xhslink.com/m/8BTBv4WZsmn"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-rednote.svg" alt="小红书 badge"></a>
         <b>What I Do</b>
         <ul>
           <li>Agent Development</li>
@@ -37,3 +35,4 @@
 ## Contribution Snake
 
 ![Snake Animation](https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/github-contribution-grid-snake.svg)
+
