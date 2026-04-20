@@ -1,0 +1,46 @@
+name: generate-pixel-profile-gif
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Download pixel-profile images
+        run: |
+          mkdir -p frames
+          # Download the same image multiple times for simple animation
+          for i in {1..3}; do
+            curl -o "frames/frame_$i.png" "https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true"
+          done
+
+      - name: Create animated GIF
+        run: |
+          ffmpeg -hide_banner -loglevel error -r 2 -i frames/frame_%d.png -loop 0 pixel-profile.gif
+
+      - name: Upload GIF to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: output
+          destination_dir: .
+          force_orphan: true
