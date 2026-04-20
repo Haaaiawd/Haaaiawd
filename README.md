@@ -10,29 +10,29 @@
 
 ## About Me
 
-<p align="center">
-  <font size="5">👋 Hi! I'm passionate about building intelligent systems.</font>
-</p>
+  <font size="3">👋 Hi! I'm passionate about building intelligent systems.</font>
 
-<div align="left">
-  <h3>Connect with Me</h3>
-  <ul>
-    <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/bonjour!.png" alt="bonjour" width="20" height="20"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
-    <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/rednote.png" alt="小红书" width="20" height="20"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
-  </ul>
-
-  <h3>What I Do</h3>
-  <ul>
-    <li>Agent Development</li>
-    <li>AI Programming</li>
-    <li>Prompt Engineering</li>
-  </ul>
-</div>
-
-<div align="right">
-  <h3>Tech Stack</h3>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true" alt="Top Languages">
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td width="50%">
+      <b>Connect with Me</b>
+      <ul>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/bonjour!.png" alt="bonjour" width="20" height="20"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/rednote.png" alt="小红书" width="20" height="20"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
+      </ul>
+      <b>What I Do</b>
+      <ul>
+        <li>Agent Development</li>
+        <li>AI Programming</li>
+        <li>Prompt Engineering</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <b>Tech Stack</b><br>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true" alt="Top Languages">
+    </td>
+  </tr>
+</table>
 
 ## Contribution Snake
 
