@@ -17,7 +17,7 @@
       <td width="50%">
         <b>Connect with Me</b><br>
         <a href="https://bonjour.bio/haa"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-bonjour.svg" alt="bonjour badge"></a><br>
-        <a href="https://xhslink.com/m/8BTBv4WZsmn"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-rednote.svg" alt="小红书 badge"></a>
+        <a href="https://xhslink.com/m/8BTBv4WZsmn"><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/social-rednote.svg" alt="小红书 badge"></a><br>
         <b>What I Do</b>
         <ul>
           <li>Agent Development</li>
