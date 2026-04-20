@@ -7,14 +7,14 @@ Hi there! I'm Haaaiawd
 </picture>
 
 <!-- Terminal GIF -->
-<img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/terminal.gif" alt="Terminal GIF" />
+<img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif" alt="Terminal GIF" />
 
 ---
 
-## 📊 Top Languages
+## Top Languages
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
 
-## 🐍 Contribution Snake
+## Contribution Snake
 
 ![Snake Animation](https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/github-contribution-grid-snake.svg)
