@@ -15,6 +15,24 @@ Hi there! I'm Haaaiawd
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
 
+---
+
+## About Me
+
+👋 Hi! I'm passionate about building intelligent systems.
+
+**Links**
+- bonjour! https://bonjour.bio/haa
+- 小红书 https://xhslink.com/m/8BTBv4WZsmn
+
+**Skills**
+- Agent Development
+- AI Programming
+- Prompt Engineering
+
+**Current Projects**
+- Haaaiawd/Haaaiawd - GitHub Profile
+
 ## Contribution Snake
 
 ![Snake Animation](https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/github-contribution-grid-snake.svg)
