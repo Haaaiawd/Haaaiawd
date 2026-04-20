@@ -6,12 +6,6 @@ Hi there! I'm Haaaiawd
   <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
 </picture>
 
-<picture decoding="async" loading="lazy">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif">
-  <img alt="terminal" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif">
-</picture>
-
 ---
 
 ## About Me
