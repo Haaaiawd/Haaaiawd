@@ -1,10 +1,13 @@
 Hi there! I'm Haaaiawd
 
 <picture decoding="async" loading="lazy">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
-  <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
+  <source media="(prefers-color-scheme: light)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
+  <source media="(prefers-color-scheme: dark)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
+  <img alt="github stats" src="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
 </picture>
+
+<!-- Terminal GIF -->
+<img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif" alt="Terminal GIF" />
 
 ---
 
@@ -17,8 +20,8 @@ Hi there! I'm Haaaiawd
     <td width="50%">
       <b>Connect with Me</b>
       <ul>
-        <li><img src="assets/bonjour!.png" alt="bonjour" width="16" height="16"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
-        <li><img src="assets/rednote.png" alt="小红书" width="16" height="16"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/bonjour!.png" alt="bonjour" width="16" height="16"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/rednote.png" alt="小红书" width="16" height="16"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
       </ul>
       <b>What I Do</b>
       <ul>
