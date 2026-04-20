@@ -47,7 +47,7 @@ jobs:
 
       - name: Create pixel-profile GIF (16:9)
         run: |
-          ffmpeg -hide_banner -loglevel error -r 2 -i pixel-frames/frame_%d.png -vf "scale=640:360" -loop 0 pixel-profile.gif
+          ffmpeg -hide_banner -loglevel error -r 2 -i pixel-frames/frame_%d.png -vf "scale=640:360,eq=brightness=0.05:contrast=1.05" -loop 0 pixel-profile.gif
 
       - name: Merge pixel-profile and terminal GIFs (pixel-profile first)
         run: |
