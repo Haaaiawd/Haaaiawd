@@ -11,12 +11,6 @@ Hi there! I'm Haaaiawd
 
 ---
 
-## Top Languages
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
-
----
-
 ## About Me
 
 👋 Hi! I'm passionate about building intelligent systems.
@@ -32,6 +26,9 @@ Hi there! I'm Haaaiawd
 
 **Current Projects**
 - Haaaiawd/Haaaiawd - GitHub Profile
+
+**Top Languages**
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
 
 ## Contribution Snake
 
