@@ -15,16 +15,16 @@ Hi there! I'm Haaaiawd
 
 👋 Hi! I'm passionate about building intelligent systems.
 
-**Links**
+**Connect with Me**
 - bonjour! https://bonjour.bio/haa
 - 小红书 https://xhslink.com/m/8BTBv4WZsmn
 
-**Skills**
+**What I Do**
 - Agent Development
 - AI Programming
 - Prompt Engineering
 
-**Top Languages**
+**Tech Stack**
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
 
 ## Contribution Snake

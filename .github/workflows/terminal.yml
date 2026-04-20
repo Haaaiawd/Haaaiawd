@@ -11,7 +11,7 @@ on:
   # run on every push on the main branch
   push:
     branches:
-      - main
+      - master
 
 jobs:
   generate:
@@ -50,4 +50,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           publish_branch: output
+          destination_dir: .
           force_orphan: true

@@ -9,7 +9,6 @@ import os
 
 # Configuration
 USERNAME = "Haaaiawd"
-OUTPUT_FILE = "terminal.gif"
 
 # Create terminal with pixel-style font
 t = gifos.Terminal(width=320, height=240, xpad=5, ypad=5)
@@ -56,7 +55,7 @@ else:
 t.gen_text(text="|", row_num=7, contin=True)
 t.gen_text(text="+--------------------+", row_num=8, contin=True)
 
-# Generate GIF
+# Generate GIF (uses default output.gif)
 t.gen_gif()
 
-print(f"Terminal GIF generated: {OUTPUT_FILE}")
+print("Terminal GIF generated: output.gif")
