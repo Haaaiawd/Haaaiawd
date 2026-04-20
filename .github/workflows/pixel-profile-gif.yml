@@ -46,8 +46,9 @@ jobs:
 
       - name: Build pixel-profile GIF (16:9)
         run: |
+          # 3 frames at 1 fps => ~3s of pixel-profile before the terminal segment.
           ffmpeg -y -hide_banner -loglevel error \
-            -framerate 2 -i pixel-frames/frame_%d.png \
+            -framerate 1 -i pixel-frames/frame_%d.png \
             -vf "scale=640:360:flags=lanczos,eq=brightness=0.05:contrast=1.05" \
             -loop 0 pixel-profile-only.gif
 

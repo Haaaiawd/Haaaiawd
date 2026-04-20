@@ -21,15 +21,16 @@ PROMPT = f"\x1b[1;32m{USERNAME}@github\x1b[0m:~$ "
 t = gifos.Terminal(width=640, height=360, xpad=14, ypad=14)
 t.set_fps(15)
 
-# speed=1 = fast (1 frame per char); output lines use gen_text for instant print.
-TYPING_FAST = 1
+# speed=2 = medium (matches the original pacing);
+# output lines use gen_text for instant, shell-style printing.
+TYPING_SPEED = 2
 
 
 def prompt_line(row: int, command: str) -> None:
     """Render a typed prompt + command on a single line."""
     t.gen_text(PROMPT, row_num=row)
     t.gen_typing_text(command, row_num=row, col_num=len(f"{USERNAME}@github:~$ ") + 1,
-                      contin=True, speed=TYPING_FAST)
+                      contin=True, speed=TYPING_SPEED)
 
 
 # --- whoami ------------------------------------------------------------
