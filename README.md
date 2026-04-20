@@ -24,9 +24,6 @@ Hi there! I'm Haaaiawd
 - AI Programming
 - Prompt Engineering
 
-**Current Projects**
-- Haaaiawd/Haaaiawd - GitHub Profile
-
 **Top Languages**
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
 
