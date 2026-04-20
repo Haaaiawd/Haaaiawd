@@ -49,6 +49,10 @@ jobs:
         run: |
           ffmpeg -hide_banner -loglevel error -r 2 -i pixel-frames/frame_%d.png -vf "scale=640:360" -loop 0 pixel-profile.gif
 
+      - name: Merge pixel-profile and terminal GIFs (pixel-profile first)
+        run: |
+          ffmpeg -hide_banner -loglevel error -i pixel-profile.gif -i output.gif -filter_complex "[0:v][1:v]concat=n=2:v=1" -loop 0 pixel-profile.gif
+
       - name: Upload GIFs to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
