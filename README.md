@@ -15,17 +15,27 @@ Hi there! I'm Haaaiawd
 
 👋 Hi! I'm passionate about building intelligent systems.
 
-**Connect with Me**
-- bonjour! https://bonjour.bio/haa
-- 小红书 https://xhslink.com/m/8BTBv4WZsmn
-
-**What I Do**
-- Agent Development
-- AI Programming
-- Prompt Engineering
-
-**Tech Stack**
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
+<table>
+  <tr>
+    <td width="50%">
+      <b>Connect with Me</b>
+      <ul>
+        <li>bonjour! https://bonjour.bio/haa</li>
+        <li>小红书 https://xhslink.com/m/8BTBv4WZsmn</li>
+      </ul>
+      <b>What I Do</b>
+      <ul>
+        <li>Agent Development</li>
+        <li>AI Programming</li>
+        <li>Prompt Engineering</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <b>Tech Stack</b><br>
+      ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
+    </td>
+  </tr>
+</table>
 
 ## Contribution Snake
 
