@@ -17,8 +17,8 @@ Hi there! I'm Haaaiawd
     <td width="50%">
       <b>Connect with Me</b>
       <ul>
-        <li>bonjour! https://bonjour.bio/haa</li>
-        <li>小红书 https://xhslink.com/m/8BTBv4WZsmn</li>
+        <li><img src="assets/bonjour.png" alt="bonjour" width="16" height="16"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
+        <li><img src="assets/xiaohongshu.png" alt="小红书" width="16" height="16"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
       </ul>
       <b>What I Do</b>
       <ul>
