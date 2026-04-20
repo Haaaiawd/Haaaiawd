@@ -6,9 +6,6 @@ Hi there! I'm Haaaiawd
   <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
 </picture>
 
-<!-- Terminal GIF -->
-<img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/output.gif" alt="Terminal GIF" />
-
 ---
 
 ## About Me
