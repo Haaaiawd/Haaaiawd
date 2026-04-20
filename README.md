@@ -17,8 +17,8 @@
     <td width="50%">
       <b>Connect with Me</b>
       <ul>
-        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/bonjour!.png" alt="bonjour" width="20" height="20"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
-        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/rednote.png" alt="小红书" width="20" height="20"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/bonjour!.png" alt="bonjour" width="20" height="20" align="middle"> <a href="https://bonjour.bio/haa">bonjour!</a></li>
+        <li><img src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/master/assets/rednote.png" alt="小红书" width="20" height="20" align="middle"> <a href="https://xhslink.com/m/8BTBv4WZsmn">小红书</a></li>
       </ul>
       <b>What I Do</b>
       <ul>
