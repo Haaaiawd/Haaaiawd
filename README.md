@@ -11,7 +11,10 @@ Hi there! I'm Haaaiawd 👋
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Top Languages
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Haaaiawd&show_icons=true&theme=radical&hide_title=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true)
+
+## 🐍 Contribution Snake
+
+![Snake Animation](https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/github-contribution-grid-snake.svg)
