@@ -45,15 +45,11 @@ jobs:
             curl -o "pixel-frames/frame_$i.png" "https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true"
           done
 
-      - name: Create pixel-profile GIF
+      - name: Create pixel-profile GIF (16:9)
         run: |
           ffmpeg -hide_banner -loglevel error -r 2 -i pixel-frames/frame_%d.png -vf "scale=640:360" -loop 0 pixel-profile.gif
 
-      - name: Merge pixel-profile and terminal GIFs
-        run: |
-          ffmpeg -hide_banner -loglevel error -i pixel-profile.gif -i output.gif -filter_complex "[0:v]scale=640:360[top];[1:v]scale=640:270[bottom];[top][bottom]vstack" -loop 0 pixel-profile.gif
-
-      - name: Upload GIF to output branch
+      - name: Upload GIFs to output branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
