@@ -1,9 +1,9 @@
 Hi there! I'm Haaaiawd
 
 <picture decoding="async" loading="lazy">
-  <source media="(prefers-color-scheme: light)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
-  <source media="(prefers-color-scheme: dark)" srcset="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
-  <img alt="github stats" src="https://my-pixel-profile-nine.vercel.app/api/github-stats?username=Haaaiawd&theme=road_trip_crt&pixelate_avatar=true&screen_effect=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
+  <img alt="github stats" src="https://raw.githubusercontent.com/Haaaiawd/Haaaiawd/output/pixel-profile.gif">
 </picture>
 
 <!-- Terminal GIF -->
