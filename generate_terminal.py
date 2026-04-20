@@ -22,7 +22,7 @@ t.gen_text(text="  AI Programming", row_num=5)
 t.gen_text(text="  Prompt Engineering", row_num=6)
 t.gen_text(text="", row_num=7)
 t.gen_text(text="\x1b[1;33mVision:\x1b[0m", row_num=8)
-t.gen_text(text="\x1b[1;37mEmpowering humanity's future through AI for good\x1b[0m", row_num=9)
+t.gen_text(text="\x1b[1;37mLet AI Illuminate Humanity's Radiant Future of Goodness\x1b[0m", row_num=9)
 
 # Generate GIF
 t.gen_gif()
