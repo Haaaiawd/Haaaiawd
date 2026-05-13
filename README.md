@@ -27,7 +27,7 @@
       </td>
       <td width="50%">
         <b>Tech Stack</b><br>
-        <img src="./assets/profile-top-langs.svg" alt="Top Languages">
+        <img src="https://github-readme-stats-delta-teal-20.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true" alt="Top Languages">
       </td>
     </tr>
   </table>
