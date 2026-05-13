@@ -1,0 +1,58 @@
+name: update-top-langs-card
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - README.md
+      - .github/workflows/update-top-langs-card.yml
+
+jobs:
+  refresh-card:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch top languages SVG
+        run: |
+          set -euo pipefail
+          url="https://github-readme-stats.vercel.app/api/top-langs/?username=Haaaiawd&layout=compact&theme=radical&hide_title=true"
+          temp_file="assets/profile-top-langs.svg.tmp"
+
+          # Keep the existing card unless the upstream response is a valid SVG.
+          curl --fail --location --retry 3 --retry-delay 5 --output "$temp_file" "$url"
+
+          if ! grep -qi "<svg" "$temp_file"; then
+            echo "Fetched payload is not an SVG."
+            exit 1
+          fi
+
+          if grep -qi "error fetch" "$temp_file"; then
+            echo "Fetched SVG contains upstream error text."
+            exit 1
+          fi
+
+          mv "$temp_file" assets/profile-top-langs.svg
+
+      - name: Commit updated card if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- assets/profile-top-langs.svg; then
+            echo "No card update detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-top-langs.svg
+          git commit -m "chore: refresh profile top languages card"
+          git push

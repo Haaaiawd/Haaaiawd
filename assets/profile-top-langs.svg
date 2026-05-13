@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="180" viewBox="0 0 360 180" role="img" aria-labelledby="title desc">
+  <title id="title">Top languages card placeholder</title>
+  <desc id="desc">Fallback card used while the scheduled workflow refreshes the generated GitHub language statistics SVG.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1b2e"/>
+      <stop offset="100%" stop-color="#2d1238"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="180" rx="16" fill="url(#bg)"/>
+  <rect x="12" y="12" width="336" height="156" rx="12" fill="none" stroke="#ff4d94" stroke-opacity="0.35"/>
+  <text x="24" y="42" fill="#f8d2e4" font-size="18" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Top Languages</text>
+  <text x="24" y="74" fill="#f7f7f7" font-size="13" font-family="Segoe UI, Arial, sans-serif">The public stats endpoint is unreliable.</text>
+  <text x="24" y="96" fill="#f7f7f7" font-size="13" font-family="Segoe UI, Arial, sans-serif">A GitHub Actions workflow will refresh this card daily.</text>
+  <text x="24" y="128" fill="#ffb3d1" font-size="12" font-family="Consolas, Monaco, monospace">source: github-readme-stats</text>
+  <text x="24" y="148" fill="#ffb3d1" font-size="12" font-family="Consolas, Monaco, monospace">status: waiting for first successful workflow run</text>
+</svg>
